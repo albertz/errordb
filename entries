@@ -13,3 +13,8 @@ Command: debootstrap
 Solution1: Get perl-base from <http://ftp.us.debian.org/debian/pool/main/p/perl/>. `ar -x perl-base*.deb`. `tar -xzvf data.tar.gz -C /`.
 Solution2: Install ipkg. Install perl via ipkg. Symlink `/usr/bin/perl`.
 # Solution* should be a list/set. And it might make sense to have other attributes. Like that the second solution only works if ipkg can be installed somehow. The first solution also very probably doesn't work on non-Debian-like systems.
+
+Msg: E: Unknown compression type for  in .//var/cache/...
+Command: debootstrap
+Solution1: Install `ar` via ipkg (binutils package). Symlink `/usr/bin/ar`.
+
