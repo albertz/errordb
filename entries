@@ -18,3 +18,10 @@ Msg: E: Unknown compression type for  in .//var/cache/...
 Command: debootstrap
 Solution1: Install `ar` via ipkg (binutils package). Symlink `/usr/bin/ar`.
 
+Msg: bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
+Command: bash
+Solution1: `apt-get install locales`. `dpkg-reconfigure locales` and select "en_US.UTF-8".
+
+Msg: WARNING: The following packages cannot be authenticated
+Command: apt-get
+Solution1: `apt-get install locales && dpkg-reconfigure locales` and select "en_US_UTF-8" solved this for me.
