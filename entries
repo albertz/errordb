@@ -26,3 +26,10 @@ Msg: WARNING: The following packages cannot be authenticated
 Command: apt-get
 Solution1: `apt-get install locales && dpkg-reconfigure locales` and select "en_US_UTF-8" solved this for me. Not sure if that was by some indirect dependencies or what the problem was.
 
+Msg: configure: error: C++ compiler cannot create executables
+Command: ./configure
+Solution1: `apt-get install build-essential`.
+
+Msg: configure: error: Can't find ext2fs library
+Command: ./configure
+Solution1: `apt-get install e2fslibs-dev`.
