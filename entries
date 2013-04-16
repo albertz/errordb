@@ -1,0 +1,15 @@
+# These are just some examples.
+# I'm building this list here to show what entries are probably needed
+# and the structure and format of the database.
+
+
+Msg: Unknown command 'debootstrap'
+Command: debootstrap
+# In Windows or so, it might make sense to have "GUI steps" instead of 'Command'.
+Solution1: Get debootstrap from <http://packages.debian.org/squeeze/all/debootstrap/download>. `ar -x debootstrap.deb`. `tar -xzvf data.tar.gz -C /`.
+
+Msg: E: No pkgdetails available; either install perl, or build pkgdetails.c from source
+Command: debootstrap
+Solution1: Get perl-base from <http://ftp.us.debian.org/debian/pool/main/p/perl/>. `ar -x perl-base*.deb`. `tar -xzvf data.tar.gz -C /`.
+Solution2: Install ipkg. Install perl via ipkg. Symlink `/usr/bin/perl`.
+# Solution* should be a list/set. And it might make sense to have other attributes. Like that the second solution only works if ipkg can be installed somehow. The first solution also very probably doesn't work on non-Debian-like systems.
