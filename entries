@@ -33,3 +33,7 @@ Solution1: `apt-get install build-essential`.
 Msg: configure: error: Can't find ext2fs library
 Command: ./configure
 Solution1: `apt-get install e2fslibs-dev`.
+
+Msg: undefined reference to `__dso_handle'
+Command: ld ...
+Solution1: use c/c++ to link
