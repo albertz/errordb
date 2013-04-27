@@ -37,3 +37,7 @@ Solution1: `apt-get install e2fslibs-dev`.
 Msg: undefined reference to `__dso_handle'
 Command: ld ...
 Solution1: use c/c++ to link
+
+Msg: abort: failed to synchronize metadata
+Command: hg import ...patch
+Solution1: patch-file is corrupt. Download it again. I accidently downloaded the HTML-formated patch.
