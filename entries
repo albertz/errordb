@@ -41,3 +41,8 @@ Solution1: use c/c++ to link
 Msg: abort: failed to synchronize metadata
 Command: hg import ...patch
 Solution1: patch-file is corrupt. Download it again. I accidently downloaded the HTML-formated patch.
+
+Msg: abort: no username supplied
+Command: hg import ...
+Solution1: Edit `~/.hgrc` and write "[ui]\nusername = Albert Zeyer <albzey@gmail.com>\n".
+
