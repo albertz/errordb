@@ -46,3 +46,7 @@ Msg: abort: no username supplied
 Command: hg import ...
 Solution1: Edit `~/.hgrc` and write "[ui]\nusername = Albert Zeyer <albzey@gmail.com>\n".
 
+Msg: abort: outstanding uncommitted changes
+Command: hg import ...
+Solution1: `hg commit`
+
