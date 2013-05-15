@@ -50,3 +50,7 @@ Msg: abort: outstanding uncommitted changes
 Command: hg import ...
 Solution1: `hg commit`
 
+Msg: E: Unable to locate package kubuntu-desktop
+Command: apt-get install kubuntu-desktop
+Solution1: add universe deb to /etc/apt/sources.list
+
