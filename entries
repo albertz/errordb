@@ -54,3 +54,6 @@ Msg: E: Unable to locate package kubuntu-desktop
 Command: apt-get install kubuntu-desktop
 Solution1: add universe deb to /etc/apt/sources.list
 
+Msg: SDL_syswm.h:58:10: fatal error: 'X11/Xlib.h' file not found
+Command: pip3 install pygame
+
