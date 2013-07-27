@@ -59,4 +59,5 @@ Command: pip3 install pygame
 
 Msg: postalias: fatal: unsupported map type: hash
 Command: newaliases
+Solution1: On Gentoo: Enable "berkdb" USE-flag.
 
