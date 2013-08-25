@@ -61,3 +61,7 @@ Msg: postalias: fatal: unsupported map type: hash
 Command: newaliases
 Solution1: On Gentoo: Enable "berkdb" USE-flag.
 
+Msg: RTNETLINK answers: File exists
+Command: /etc/init.d/networking restart
+Solution1: ifdown --force eth0; ifup eth0
+
