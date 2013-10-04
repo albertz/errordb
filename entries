@@ -65,3 +65,7 @@ Msg: RTNETLINK answers: File exists
 Command: /etc/init.d/networking restart
 Solution1: ifdown --force eth0; ifup eth0
 
+Msg: SyntaxError: Non-ASCII character ...
+Command: python ...
+Solution1: Add "# -*- coding: utf-8 -*-" at the top of the Python source code.
+
