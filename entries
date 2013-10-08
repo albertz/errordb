@@ -69,3 +69,7 @@ Msg: SyntaxError: Non-ASCII character ...
 Command: python ...
 Solution1: Add "# -*- coding: utf-8 -*-" at the top of the Python source code.
 
+Msg: dyld: Symbol not found: __ZTIN4llvm10CallbackVHE
+Command: clang++-3.3
+Solution1: brew uninstall llvm # because llvm33 is the package for clang++
+
