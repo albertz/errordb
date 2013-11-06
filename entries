@@ -73,3 +73,7 @@ Msg: dyld: Symbol not found: __ZTIN4llvm10CallbackVHE
 Command: clang++-3.3
 Solution1: brew uninstall llvm # because llvm33 is the package for clang++
 
+Msg: unresolved references: __strlcat_chk, __strlcpy_chk
+Command: ld ... -lsqlite3
+Solution1: export CFLAGS="-DMAC_OS_X_VERSION_MIN_REQUIRED=1060" && <recompile lib>
+
