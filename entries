@@ -77,3 +77,6 @@ Msg: unresolved references: __strlcat_chk, __strlcpy_chk
 Command: ld ... -lsqlite3
 Solution1: export CFLAGS="-DMAC_OS_X_VERSION_MIN_REQUIRED=1060" && <recompile lib>
 
+Msg: checking for XML::Parser... configure: error: XML::Parser perl module is required for intltool
+Command: emerge ...
+Solution1: perl-cleaner --all
